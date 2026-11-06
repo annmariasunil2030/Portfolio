@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <defs>
+    <linearGradient id="p2bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1F35"/>
+      <stop offset="100%" stop-color="#071426"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="p2glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#p2bg)"/>
+
+  <!-- Code & Neural Network Visualization -->
+  <g transform="translate(40, 35)">
+    <rect width="520" height="310" rx="12" fill="#061220" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.3"/>
+    
+    <!-- Header bar -->
+    <circle cx="25" cy="22" r="5" fill="#EF4444" opacity="0.8"/>
+    <circle cx="42" cy="22" r="5" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="59" cy="22" r="5" fill="#10B981" opacity="0.8"/>
+    <text x="85" y="26" fill="#94A3B8" font-family="'Courier New', monospace" font-size="11">ai_query_assistant.py — Python 3.11</text>
+
+    <!-- Terminal & Neural Network Dual Pane -->
+    <!-- Left Pane: Code snippets -->
+    <rect x="20" y="48" width="230" height="240" rx="8" fill="#08182B" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.2"/>
+    <text x="35" y="75" fill="#38BDF8" font-family="'Courier New', monospace" font-size="10">import</text>
+    <text x="80" y="75" fill="#F1F5F9" font-family="'Courier New', monospace" font-size="10">torch, numpy as np</text>
+
+    <text x="35" y="98" fill="#22D3EE" font-family="'Courier New', monospace" font-size="10">class</text>
+    <text x="75" y="98" fill="#F1F5F9" font-family="'Courier New', monospace" font-size="10">CampusQueryBot:</text>
+
+    <text x="50" y="120" fill="#94A3B8" font-family="'Courier New', monospace" font-size="9.5">def __init__(self):</text>
+    <text x="65" y="138" fill="#F1F5F9" font-family="'Courier New', monospace" font-size="9.5">self.embeds = load_index()</text>
+    <text x="65" y="156" fill="#38BDF8" font-family="'Courier New', monospace" font-size="9.5">self.status = "Trained"</text>
+
+    <text x="50" y="182" fill="#94A3B8" font-family="'Courier New', monospace" font-size="9.5">def search(self, query):</text>
+    <text x="65" y="200" fill="#22D3EE" font-family="'Courier New', monospace" font-size="9.5">scores = cosine_sim(query)</text>
+    <text x="65" y="218" fill="#10B981" font-family="'Courier New', monospace" font-size="9.5">return rank_answers(scores)</text>
+
+    <rect x="35" y="240" width="180" height="28" rx="6" fill="#0B1F35" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="45" y="258" fill="#22D3EE" font-family="'Courier New', monospace" font-size="9.5">&gt; Accuracy: 94.8% (eval)</text>
+
+    <!-- Right Pane: Interactive AI Neural Nodes -->
+    <rect x="265" y="48" width="235" height="240" rx="8" fill="#08182B" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.2"/>
+    
+    <!-- Connection lines -->
+    <g stroke="url(#cyanLine)" stroke-width="1" opacity="0.4">
+      <line x1="300" y1="90" x2="380" y2="120"/>
+      <line x1="300" y1="90" x2="380" y2="170"/>
+      <line x1="300" y1="160" x2="380" y2="120"/>
+      <line x1="300" y1="160" x2="380" y2="170"/>
+      <line x1="300" y1="230" x2="380" y2="170"/>
+      <line x1="300" y1="230" x2="380" y2="220"/>
+      <line x1="380" y1="120" x2="460" y2="150"/>
+      <line x1="380" y1="170" x2="460" y2="150"/>
+      <line x1="380" y1="220" x2="460" y2="200"/>
+    </g>
+
+    <!-- Layer 1 Nodes -->
+    <circle cx="300" cy="90" r="10" fill="#0B1F35" stroke="#22D3EE" stroke-width="2"/>
+    <circle cx="300" cy="160" r="10" fill="#0B1F35" stroke="#22D3EE" stroke-width="2"/>
+    <circle cx="300" cy="230" r="10" fill="#0B1F35" stroke="#22D3EE" stroke-width="2"/>
+
+    <!-- Layer 2 Nodes (Hidden) -->
+    <circle cx="380" cy="120" r="12" fill="#0E2847" stroke="#38BDF8" stroke-width="2" filter="url(#p2glow)"/>
+    <circle cx="380" cy="170" r="12" fill="#0E2847" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="380" cy="220" r="12" fill="#0E2847" stroke="#38BDF8" stroke-width="2"/>
+
+    <!-- Layer 3 Output Node -->
+    <circle cx="460" cy="150" r="14" fill="#22D3EE" filter="url(#p2glow)"/>
+    <circle cx="460" cy="150" r="6" fill="#071426"/>
+    <circle cx="460" cy="200" r="10" fill="#0B1F35" stroke="#22D3EE" stroke-width="2"/>
+
+    <text x="315" y="270" fill="#F1F5F9" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Amal Jyothi Knowledge Bot</text>
+  </g>
+</svg>
+

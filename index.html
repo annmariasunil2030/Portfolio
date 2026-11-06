@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ann Maria Sunil | Computer Science Engineering &amp; Aspiring Software Engineer</title>
+  <meta name="description" content="Portfolio of Ann Maria Sunil, a first-year Computer Science Engineering student at Amal Jyothi College of Engineering passionate about web development, AI, ML, and software engineering.">
+  <meta name="keywords" content="Ann Maria Sunil, Computer Science Student, Amal Jyothi College of Engineering, Software Engineer Portfolio, Web Developer, AI ML">
+  <meta name="author" content="Ann Maria Sunil">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ann Maria Sunil | Computer Science Student &amp; Developer">
+  <meta property="og:description" content="Explore projects, skills, academic journey, and technical curiosity of Ann Maria Sunil.">
+  <meta property="og:image" content="assets/images/profile-placeholder.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Three.js (Optional lightweight 3D) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Ann Maria Sunil Home">
+        <div class="brand-badge">AM</div>
+        <div class="brand-text">Ann Maria <span>Sunil</span></div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action items: Theme Toggle & Hamburger -->
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle Theme">
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content reveal">
+          <div class="hero-status-pill">
+            <span class="pulse-dot"></span>
+            <span>B.Tech CSE • Amal Jyothi College of Engineering</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text">Ann Maria Sunil.</span>
+          </h1>
+
+          <!-- Animated typing text -->
+          <div class="typing-container">
+            <span class="typing-text"></span>
+          </div>
+
+          <p class="hero-desc">
+            I'm a Computer Science Engineering student passionate about technology, web development, artificial intelligence, and creating meaningful digital experiences.
+          </p>
+
+          <!-- Buttons -->
+          <div class="hero-cta-group">
+            <a href="projects.html" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+            <a href="resume.html" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+            <a href="contact.html" class="social-link" title="Send Email" aria-label="Direct Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: 3D Interactive Abstract Composition -->
+        <div class="hero-3d-wrapper reveal delay-2">
+          <!-- Three.js Canvas -->
+          <canvas id="three-canvas"></canvas>
+
+          <!-- Graceful CSS 3D Fallback -->
+          <div class="canvas-fallback">
+            <div class="orb-center">
+              <div class="orb-ring"></div>
+              <div class="orb-ring-2"></div>
+            </div>
+          </div>
+
+          <!-- Floating Micro Badges -->
+          <div class="hero-floating-card">
+            <div class="pulse-dot"></div>
+            <div>
+              <div style="font-size:0.75rem; color:var(--accent-cyan); font-weight:700;">AMAL JYOTHI COLLEGE</div>
+              <div style="font-size:0.85rem; font-weight:600; color:var(--text-main);">1st Year B.Tech CSE</div>
+            </div>
+          </div>
+
+          <div class="hero-floating-card-2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <div>
+              <div style="font-size:0.75rem; color:var(--accent-sky); font-weight:700;">CORE STACK</div>
+              <div style="font-size:0.85rem; font-weight:600; color:var(--text-main);">C &amp; Python</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Highlights Section -->
+    <section class="section" style="padding-top: 1rem; padding-bottom: 4rem;">
+      <div class="container">
+        <div class="quick-stats-grid">
+          <div class="glass-card stat-item reveal delay-1">
+            <div class="stat-number">1st</div>
+            <div class="stat-label">Year B.Tech CSE Student</div>
+          </div>
+          <div class="glass-card stat-item reveal delay-2">
+            <div class="stat-number">C &amp; Py</div>
+            <div class="stat-label">Foundational Languages</div>
+          </div>
+          <div class="glass-card stat-item reveal delay-3">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Core Focus Areas</div>
+          </div>
+          <div class="glass-card stat-item reveal delay-4">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Curiosity &amp; Drive</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Preview: About & Interests -->
+    <section class="section" style="background: rgba(11, 31, 53, 0.35);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Background &amp; Philosophy
+          </div>
+          <h2 class="section-title">Driven by <span>Curiosity</span> and Code</h2>
+          <p class="section-desc">
+            Bridging conceptual computer science engineering principles with practical software design and modern intelligent interfaces.
+          </p>
+        </div>
+
+        <div class="interests-grid reveal delay-1">
+          <div class="glass-card interest-item tilt-card">
+            <div class="interest-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <div class="interest-info">
+              <h4>Web Development</h4>
+              <p>Designing modern, responsive, and accessible digital interfaces that deliver delightful user experiences.</p>
+            </div>
+          </div>
+
+          <div class="glass-card interest-item tilt-card">
+            <div class="interest-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/>
+                <rect x="3" y="6" width="18" height="15" rx="4"/>
+                <circle cx="8" cy="13" r="1.5" fill="currentColor"/>
+                <circle cx="16" cy="13" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="interest-info">
+              <h4>Artificial Intelligence</h4>
+              <p>Exploring machine learning models, intelligent search heuristics, and interactive intelligent agents.</p>
+            </div>
+          </div>
+
+          <div class="glass-card interest-item tilt-card">
+            <div class="interest-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"/>
+                <line x1="2" y1="20" x2="2.01" y2="20"/>
+              </svg>
+            </div>
+            <div class="interest-info">
+              <h4>Machine Learning</h4>
+              <p>Understanding data patterns, algorithmic predictions, and mathematical structures behind smart computing.</p>
+            </div>
+          </div>
+
+          <div class="glass-card interest-item tilt-card">
+            <div class="interest-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
+            <div class="interest-info">
+              <h4>UI / UX Design</h4>
+              <p>Crafting sleek visual hierarchy, typography, glassmorphism, and micro-interactions for modern software.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;" class="reveal delay-2">
+          <a href="about.html" class="btn btn-secondary">
+            <span>Read Full Biography &amp; Goals</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Showcase Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Featured Engineering
+          </div>
+          <h2 class="section-title">Selected <span>Work &amp; Prototypes</span></h2>
+          <p class="section-desc">
+            Early engineering projects developed to solve problems, strengthen core programming fundamentals, and explore modern frameworks.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="glass-card project-card tilt-card reveal delay-1">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-1.svg" alt="StudyFlow Task and Study Planner" loading="lazy">
+              <span class="project-badge">Web Application</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">StudyFlow - Academic Task &amp; Sprint Planner</h3>
+              <p class="project-description">
+                A focused productivity application tailored for engineering students to track assignment sprints, focus cycles, and semester milestones with interactive visualizations.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">GitHub</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="GitHub Repository for StudyFlow">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>Repository</span>
+                </a>
+                <a href="projects.html" class="btn btn-outline btn-sm">
+                  <span>Details &amp; Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="glass-card project-card tilt-card reveal delay-2">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-2.svg" alt="Campus AI Knowledge Assistant" loading="lazy">
+              <span class="project-badge">Python &amp; AI</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">Amal Jyothi Campus Query Assistant</h3>
+              <p class="project-description">
+                A Python-based natural language query tool indexing departmental courses, academic calendar schedules, and student FAQs with cosine similarity ranking.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP Basics</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Git</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="GitHub Repository for Query Assistant">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <span>Repository</span>
+                </a>
+                <a href="projects.html" class="btn btn-outline btn-sm">
+                  <span>Details &amp; Demo</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;" class="reveal delay-3">
+          <a href="projects.html" class="btn btn-primary">
+            <span>Explore All Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="glass-panel" style="padding: 3.5rem 2.5rem; text-align: center; background: linear-gradient(135deg, rgba(11, 31, 53, 0.9) 0%, rgba(7, 20, 38, 0.95) 100%);">
+          <div class="section-tag" style="margin-bottom: 1rem;">Let's Connect</div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Interested in Collaborating or Discussing Technology?</h2>
+          <p style="max-width: 600px; margin: 0 auto 2rem auto; color: var(--text-muted);">
+            Whether you want to discuss student engineering initiatives, open source, or software opportunities, my inbox is always open.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Get In Touch</span>
+            </a>
+            <a href="resume.html" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>View Full Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-badge">AM</div>
+            <div class="brand-text">Ann Maria <span>Sunil</span></div>
+          </div>
+          <p>
+            First-year Computer Science Engineering student at Amal Jyothi College of Engineering. Committed to continuous learning, software engineering, and clean design.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="skills.html">Skills &amp; Stack</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Base</h4>
+          <div class="footer-links">
+            <span style="color:var(--text-main); font-weight:600;">Amal Jyothi College</span>
+            <span style="color:var(--text-muted); font-size:0.88rem;">Kanjirappally, Kottayam</span>
+            <span style="color:var(--text-muted); font-size:0.88rem;">Kerala, India</span>
+            <span style="color:var(--accent-cyan); font-size:0.88rem; margin-top:0.3rem;">B.Tech CSE (2024–2028)</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            <a href="contact.html">Send a Message</a>
+            <a href="resume.html">Download PDF CV</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Ann Maria Sunil. Designed with precision &amp; care.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="index.html" style="color:var(--text-muted);">Back to Top</a>
+          <a href="contact.html" style="color:var(--text-muted);">Inquiries</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="js/main.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
+
